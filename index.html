@@ -42,7 +42,6 @@
             <div class="wrap">
                 <section class="left">
                     <h2>Checkout</h2>
-                    <hr>
                     <form action="#" role="form" id="checkoutForm" aria-labelledby="checkoutForm">
                         <section class="basic-section">
                             <div class="title">
@@ -76,7 +75,6 @@
                             </div>
 
                         </section>
-                        <hr>
                         <section class="payment-section">
                             <div class="title">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
@@ -87,17 +85,31 @@
                                 <h3>Your Payment Information</h3>
                             </div>
                             <div class="form-to-fill">
-                                <label for="creditcard">Credit Card</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="Card Number MMYY CVC"
-                                    required aria-required="true">
+                                <fieldset>
+                                    <legend>Credit Card</legend>
+                                    <div class="card-input-group">
+                                        <div class="card-number">
+                                            <input type="text" id="cardNumber" name="cardNumber"
+                                                placeholder="Card Number" required aria-required="true">
+                                        </div>
+                                        <div class="month">
+                                            <input type="text" id="expiryMonth" name="expiryMonth" placeholder="MM / YY"
+                                                required aria-required="true" aria-label="Expiry Month">
+                                        </div>
+                                        <div class="cvc">
+                                            <input type="text" id="cvc" name="cvc" placeholder="CVC" required
+                                                aria-required="true" aria-label="CVC">
+                                        </div>
+                                    </div>
+                                </fieldset>
                             </div>
                         </section>
-                        <hr>
                         <section class="submit-section">
-                            <p>Check</p>
                             <button type="submit">Buy WP Pusher</button>
-                            <img src="assets/questionmark.svg" alt="questionmark">
-                            <p>Need any help Dont hesitate to contact support</p>
+                            <div class="help">
+                                <img src="assets/questionmark.svg" alt="questionmark">
+                                <p> <span>Need any help?</span> Dont hesitate to contact support</p>
+                            </div>
                             <img src="assets/powered_by_stripe.svg" alt="powered_by_stripe">
                         </section>
                     </form>
@@ -143,16 +155,13 @@
                                 awesome!</p>
                         </div>
                         <div class="profile">
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
-                                fill="none">
-                                <circle cx="20" cy="20" r="20" fill="#D8D8D8" />
-                            </svg> -->
                             <img src="assets/Bitmap.png" alt="profile-image">
                             <p>Kirk Beard</p>
                         </div>
                     </div>
                 </aside>
             </div>
+            <p class="copyright">© 2018 WP Pusher IVS · <a href="">Terms of Service</a></p>
         </main>
     </div>
 
