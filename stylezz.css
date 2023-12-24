@@ -1,0 +1,120 @@
+:root {
+  --background-color: #f5f8fa;
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* MAIN CSS */
+
+a {
+  text-decoration: none;
+}
+
+/* .wrapper {
+  background: #f5f8fa;
+} */
+
+header {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 1.75rem;
+  margin-inline-start: 2.5rem;
+  margin-inline-end: 2.5rem;
+}
+
+header img {
+  width: 12.5rem;
+  /* background: url(<path-to-image>), lightgray 0px 0px / 100% 100% no-repeat; */
+}
+
+.nav {
+  width: 29.75rem;
+  /* float: right; */
+  /* height: 2.5rem; */
+  flex-shrink: 0;
+  /* border: 1px solid green; */
+
+  > ul li {
+    display: inline;
+    margin-inline-end: 1.063rem;
+
+    > a {
+      color: #1d2c3c;
+      /* text-align: center; */
+      /* font-family: Lato; */
+      font-size: 0.875rem;
+      /* font-style: normal; */
+      font-weight: 700;
+      /* line-height: normal; */
+      /* letter-spacing: -0.00063rem; */
+    }
+
+    > .account-btn {
+      width: 91px;
+      border-radius: 6px;
+      border: 2px solid #646e7a;
+      /* padding-inline-start: 19px;
+      padding-inline-end: 20px;
+      padding-block-start: 11px;
+      padding-block-end: 22px; */
+      background-color: var(--background-color);
+    }
+  }
+}
+
+/* ul li {
+}
+
+ul li a {
+  
+}
+
+.account-btn {
+} */
